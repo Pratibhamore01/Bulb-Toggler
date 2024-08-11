@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bulb toggler</title>
+    <title>Bulb-toggler</title>
     <style>
         body {
             background-color: #e997e2;
@@ -40,7 +40,7 @@
 <body>
     <h1 class="header-name">Bulb toggler</h1>
 
-    <img src="./bulb-off.img" class="img-bulb" id="bulb-img">
+    <img src="./bulb.off.img.png" class="img-bulb" id="bulb-img">
 
     <div class="btn-container">
         <button type="button" class="btn" onclick="toggler('on')">
@@ -54,7 +54,7 @@
     <script>
         function toggler(state) {
             const bulbElement = document.getElementById("bulb-img")
-            bulbElement.src = state == 'on' ? "./bulb-on.img" : "./bulb-off.img"
+            bulbElement.src = state == 'on' ? "./bulb-on.img.png" : "./bulb-off.img.png"
         }
     </script>
 </body>
